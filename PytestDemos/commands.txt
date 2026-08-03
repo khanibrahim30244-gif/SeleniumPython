@@ -1,0 +1,17 @@
+command to run all tests:
+pytest (or) pytest -v -s
+
+command to run single test:
+pytest test_google.py (or) pytest -v -s test_google.py
+
+Run Specific test in test file
+pytest test_login.py::test_valid_login
+
+Run tests marked
+pytest -m smoke (or) pytest -m "smoke and regression"
+
+Parllel Testing:
+pytest -v -s test_OnlineShopping.py -n 3
+
+create  Html Reports
+pytest --html=report.html --self-contained-html
